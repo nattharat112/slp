@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ใบสมัครเรียน ปี 2569</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #eef2f3;
+        }
+        .form-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>ใบสมัครเรียน ปี 2569</h1>
+        <form action="submit_form.php" method="post">
+            <label for="fullname">ชื่อ-นามสกุล:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="กรอกชื่อ-นามสกุล" required>
+
+            <label for="dob">วัน/เดือน/ปีเกิด:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">ที่อยู่:</label>
+            <textarea id="address" name="address" rows="4" placeholder="กรอกที่อยู่" required></textarea>
+
+            <label for="phone">เบอร์โทรศัพท์:</label>
+            <input type="tel" id="phone" name="phone" placeholder="กรอกเบอร์โทรศัพท์" required>
+
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" placeholder="กรอกอีเมล" required>
+
+            <label for="education-level">ระดับการศึกษาที่ต้องการสมัคร:</label>
+            <select id="education-level" name="education-level" required>
+                <option value="">-- กรุณาเลือก --</option>
+                <option value="ปวช.1">ประกาศนียบัตรวิชาชีพ ชั้นปีที่ 1</option>
+                <option value="ปวส.1">ประกาศนียบัตรวิชาชีพชั้นสูง ชั้นปีที่ 1</option>
+            </select>
+
+            <label for="education-level">แผนกวิชา:</label>
+            <select id="education-level" name="education-level" required>
+                <option value="">-- กรุณาเลือก --</option>
+                <option value="">เทคโนโลยีสารสนเทศ</option>
+                <option value="">สถาปัตยกรรม</option>
+            </select>
+
+
+            <button type="submit" class="btn-submit">ส่งใบสมัคร</button>
+        </form>
+    </div>
+</body>
+</html>
